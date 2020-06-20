@@ -10,3 +10,4 @@
       (add-to-list 'package-selected-packages (intern package)))))
 
 (package-install-selected-packages)
+(message "Hello")
