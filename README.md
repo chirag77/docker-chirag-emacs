@@ -19,3 +19,8 @@ $ docker run -it iquiw/alpine-emacs
 
 This variable specifies space separated list of packages.
 They are installed automatically when the container is executed.
+
+
+## Favicon
+Get free favicon from:
+https://www.favicon.cc
