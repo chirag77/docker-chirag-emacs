@@ -6,7 +6,8 @@ RUN apk update && apk upgrade
 RUN apk add ca-certificates emacs
 RUN apk add gcc make g++ zlib-dev
 RUN apk search sqlite
-RUN apk add sqlite-libs-3.32.1-r1 sqlite-3.32.1-r1 
+RUN apk add sqlite-libs-3.32.1
+RUN apk add sqlite-3.32.1
 
 WORKDIR /root
 
