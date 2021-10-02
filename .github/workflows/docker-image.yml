@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v1
     - name: Build & Push Image
       run: |
       echo "${{ secrets.DOCKERPW }}" | docker login -u "chirag314" --password-stdin
       docker image build -t chirag314/chirag-emacs-image:v1 .  
-      docker push chirag314/chirag-emacs-image:tagname
+      docker push chirag314/chirag-emacs-image:v1
