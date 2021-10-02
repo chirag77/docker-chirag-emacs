@@ -15,8 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build & Push Image
-      run: |    
-      docker build . --file Dockerfile --tag chirag-emacs-image:v1
+      run: |
       echo "${{ secrets.DOCKERPW }}" | docker login -u "chirag314" --password-stdin
-      docker image build -t chirag314/chirag-emacs-image:v1 .
+      docker image build -t chirag314/chirag-emacs-image:v1 .  
       docker push chirag314/chirag-emacs-image:tagname
