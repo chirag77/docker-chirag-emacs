@@ -18,4 +18,5 @@ jobs:
       run: |
        echo "${{ secrets.DOCKERPW }}" | docker login -u "chirag314" --password-stdin
        docker build . --file Dockerfile --tag chirag-emacs-image:v1
+       echo "Build Success!"
        docker push chirag314/chirag-emacs-image:v1
