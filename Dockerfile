@@ -8,6 +8,8 @@ RUN apk add gcc make g++ zlib-dev
 RUN apk search sqlite
 RUN apk add sqlite
 
+RUN apk add coreutils
+
 
 
 WORKDIR /root
