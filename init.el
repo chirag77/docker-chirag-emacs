@@ -18,3 +18,5 @@
 
 (package-install-selected-packages)
 (message "Hello")
+
+(eval-after-load "ox-html" (setq org-html-prefer-user-labels t))
