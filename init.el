@@ -20,3 +20,4 @@
 (message "Hello")
 
 (eval-after-load "ox-html" (setq org-html-prefer-user-labels t))
+(message "Hello World")
