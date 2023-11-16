@@ -10,7 +10,7 @@ RUN apk add sqlite
 
 RUN apk add coreutils
 
-
+RUN apk add gnupg
 
 WORKDIR /root
 
