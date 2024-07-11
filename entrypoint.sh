@@ -4,7 +4,7 @@ EMACS_DIR=$HOME/.emacs.d/
 EMACS_ELPA_DIR=$EMACS_DIR/elpa/
 EMACS_INIT_FILE=$EMACS_DIR/init.el
 
-echo "inside entrypoint..."
+echo "inside entry point."
 
 if [ "$1" = emacs -a ! -d "$EMACS_ELPA_DIR" -a -n "$EMACS_PACKAGES" ]; then
 	cat > /tmp/melpa.el <<EOF
